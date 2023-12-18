@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/static/output.css" rel="stylesheet">
+  <title>Roman Emperors</title>
+</head>
+
+<body>
+  <div class="max-w-5xl mx-auto">
+
+    {% include 'header.html' %}
+
+    <div class="text-xl pt-11 px-12">
+
+      <div class="mb-11">Julio Claudian Dynasty</div>
+
+      {% for emperor in emperors %}
+
+      <div class="flex items-center mb-6 hover:bg-red-300 cursor-pointer">
+        <img src="/static/images/{{emperor['name']}}.jpg" alt="Augustus" class="w-28 mr-8" />
+        <h1>{{emperor['name']}}</h1>
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+</body>
+
+</html>

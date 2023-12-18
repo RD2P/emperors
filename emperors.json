@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Augustus",
+    "full_name": "Caesar Augustus",
+    "reign_start_year": "31 BC",
+    "reign_end_year": "14 AD"
+  },
+  {
+    "name": "Tiberius",
+    "full_name": "Tiberius Caesar Augustus",
+    "reign_start_year": "14 AD",
+    "reign_end_year": "37 AD"
+  },
+  {
+    "name": "Caligula",
+    "full_name": "Gaius Caesar Augustus Germanicus",
+    "reign_start_year": "37 AD",
+    "reign_end_year": "41 AD"
+  },
+  {
+    "name": "Claudius",
+    "full_name": "Tiberius Claudius Caesar Augustus Germanicus",
+    "reign_start_year": "41 AD",
+    "reign_end_year": "54 AD"
+  },
+  {
+    "name": "Nero",
+    "full_name": "Nero Claudius Caesar Augustus Germanicus",
+    "reign_start_year": "54 AD",
+    "reign_end_year": "68 AD"
+  }
+]

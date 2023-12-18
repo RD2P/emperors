@@ -1,0 +1,15 @@
+node_modules
+
+.idea/
+.vscode/
+__pycache__/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+docs/_build/
+dist/
+venv/
+
+output.css
+tailwind.config.js

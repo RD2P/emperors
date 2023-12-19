@@ -13,3 +13,5 @@ venv/
 
 output.css
 tailwind.config.js
+
+.env

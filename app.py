@@ -1,15 +1,9 @@
 from flask import Flask, render_template, jsonify
-import json
-from database import engine
-from database import get_emperors_from_db
-
+from db import get_emperors_from_db
 
 app = Flask(__name__)
-
-
   
 emperors_list = get_emperors_from_db()
-
 
 @app.route('/')
 def home():

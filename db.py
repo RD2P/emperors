@@ -4,14 +4,7 @@ import os
 
 load_dotenv()
 
-host=os.getenv("DATABASE_HOST")
-user=os.getenv("DATABASE_USERNAME")
-passwd=os.getenv("DATABASE_PASSWORD")
-db=os.getenv("DATABASE")
-
-db_connection_string = f"mysql+mysqlconnector://{user}:{passwd}@{host}/{db}"
-
-engine = create_engine(db_connection_string)
+engine = create_engine(os.getenv("DB_CONNECTION_STRING"))
 
 def get_emperors_from_db():
   with engine.connect() as conn:

@@ -18,7 +18,6 @@ def get_emperor(id):
 def emperors_api():
    return jsonify(emperors_list)
 
-
 if __name__ == '__main__':
     app.run(debug=True)
   

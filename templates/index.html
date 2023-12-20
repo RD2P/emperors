@@ -19,9 +19,11 @@
 
       {% for emperor in emperors %}
 
-      <div class="flex items-center mb-6 hover:bg-red-300 cursor-pointer">
-        <img src="/static/images/{{emperor['name']}}.jpg" alt="{{emperor['name']}}" class="w-28 mr-8" />
-        <h1>{{emperor['name']}}</h1>
+      <div>
+        <a href="/emperors/{{emperor['id']}}" class="flex items-center mb-6 hover:bg-red-300 cursor-pointer">
+          <img src="/static/images/{{emperor['name']}}.jpg" alt="{{emperor['name']}}" class="w-28 mr-8" />
+          <h1>{{emperor['name']}}</h1>
+        </a>
       </div>
 
       {% endfor %}

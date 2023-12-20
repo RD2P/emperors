@@ -5,23 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/static/output.css" rel="stylesheet">
-  <title>Emperor</title>
+  <title>Emperors</title>
 </head>
 
 <body>
   <div class="max-w-5xl mx-auto">
     {% include 'header.html' %}
     <div class="flex justify-center mt-16">
-      <div class="flex items-center mb-6 hover:bg-red-300 cursor-pointer">
-        <img src="/static/images/{{emperor['name']}}.jpg" alt="{{emperor['name']}}" class="w-28 mr-8" />
+      <div class="flex items-center mb-6 ">
+        <img src="/static/images/{{emperor['name'].lower()}}.png" alt="{{emperor['name']}}" class="w-28 mr-8" />
         <div>
           <h1 class="text-xl font-bold">{{emperor['name']}}</h1>
           <p>{{emperor['full_name']}}</p>
           <p>Start of reign: {{emperor['reign_start_year']}}</p>
           <p>End of reign: {{emperor['reign_end_year']}}</p>
+          <a href="/" class="mt-4 underline">Back</a>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 

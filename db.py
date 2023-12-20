@@ -14,7 +14,6 @@ def get_emperors_from_db():
       result_dicts.append(dict(row))
     return result_dicts
 
-
 def load_emperor_from_db(id):
     with engine.connect() as conn:
        result = conn.execute(

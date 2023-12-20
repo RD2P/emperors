@@ -11,7 +11,4 @@ docs/_build/
 dist/
 venv/
 
-output.css
-tailwind.config.js
-
 .env
